@@ -10,11 +10,11 @@
   --gray-500: #8490b5;
   --gray-600: #a3acc8;
   --gray-700: #c3cadb;
-  --gray-800: #e3e6ee;
-  --gray-900: #f3f4f7;
+  --gray-800: #0d0d0d;
+  --gray-900: #0d0d0d;
   --gray-999-basis: 0, 0%, 100%;
-  --gray-999_40: hsla(var(--gray-999-basis), 0.4);
-  --gray-999: #ffffff;
+  --gray-999_40: #0d0d0d;
+  --gray-999: #0d0d0d;
 
   --accent-light: #c561f6;
   --accent-regular: #7611a6;
