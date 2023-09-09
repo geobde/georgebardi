@@ -4,8 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 
-const projects = (await getCollection('article'))
-	.slice(0, 5);
+const projects = (await getCollection('article'));
 ---
 
 <BaseLayout>
