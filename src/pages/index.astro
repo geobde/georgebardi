@@ -2,9 +2,9 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
-import PortfolioPreview from '../components/PortfolioPreview.astro';
+import ArticlePreview from '../components/ArticlePreview.astro';
 
-const projects = (await getCollection('article'));
+const articles = (await getCollection('article'));
 ---
 
 <BaseLayout>
@@ -32,9 +32,9 @@ const projects = (await getCollection('article'));
 			   <p class="section-title">I try to keep things simple. You'll find writing about technologies I'm interested in at the time.</p>
 				<div class="gallery">
 						{
-							projects.map((project) => (
+							articles.map((article) => (
 								<div>
-									<PortfolioPreview project={project} />
+									<ArticlePreview article={article} />
 								</div>
 							))
 						}
