@@ -1,23 +1,23 @@
 ---
-import '../styles/global.css';
+import '../styles/global.css'
 
 const {
-	title = 'George Bardi',
-	description = 'George Bardi | Senior Frontend Engineer',
-} = Astro.props;
+  title = 'George Bardi',
+  description = 'George Bardi | Senior Frontend Engineer'
+} = Astro.props
 ---
 
-<meta charset="UTF-8" />
-<meta name="description" property="og:description" content={description} />
-<meta name="viewport" content="width=device-width" />
-<meta name="generator" content={Astro.generator} />
+<meta charset='UTF-8' />
+<meta name='description' property='og:description' content={description} />
+<meta name='viewport' content='width=device-width' />
+<meta name='generator' content={Astro.generator} />
 <title>{title}</title>
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+<link rel='icon' type='image/png' sizes='32x32' href='/favicon.png' />
 
 <script is:inline>
-	document.documentElement.classList['add']('theme-dark');
+  document.documentElement.classList['add']('theme-dark')
 
-	if (typeof localStorage !== 'undefined') {
-		localStorage.setItem('theme', "dark");
-	}
+  if (typeof localStorage !== 'undefined') {
+    localStorage.setItem('theme', 'dark')
+  }
 </script>
