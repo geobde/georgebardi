@@ -2,28 +2,9 @@
 const { data } = Astro.props.article;
 ---
 
-<a class="card" href={data.link}>
-	<span class="title">{data.title}</span>
-	<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z" fill="currentColor"></path></svg>
+<a href={data.link} class="w-full h-16 bg-[#262626] flex items-center justify-between px-5 my-6 no-underline text-white">
+    <span class="text-xl">{data.title}</span>
+    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-current">
+        <path d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z"></path>
+    </svg>
 </a>
-
-<style>
-	.card {
-		width: 100%;
-		height: 77px;
-		background-color: rgb(38 38 38/1);
-		border-color: rgb(64 64 64/1);
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
-		padding: 0 20px 0 20px;
-		margin: 30px 0;
-		text-decoration: none;
-		color: white;
-	}
-
-	.title {
-		font-size: 20px;
-	}
-</style>
