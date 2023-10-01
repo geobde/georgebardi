@@ -10,11 +10,3 @@ const { title, description } = Astro.props
 <meta name='generator' content={Astro.generator} />
 <title>{title}</title>
 <link rel='icon' type='image/png' sizes='32x32' href='/favicon.png' />
-
-<script is:inline>
-  document.documentElement.classList['add']('theme-dark')
-
-  if (typeof localStorage !== 'undefined') {
-    localStorage.setItem('theme', 'dark')
-  }
-</script>
