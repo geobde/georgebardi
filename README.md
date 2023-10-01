@@ -1,4 +1,4 @@
-# georgebardi
+# georgebardi.com
 
 - **Framework**: [Astro.js](https://astro.build/)
 - **Deployment**: [Vercel](https://vercel.com)
