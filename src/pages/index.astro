@@ -1,42 +1,49 @@
 ---
-import { getCollection } from 'astro:content'
 import BaseLayout from '../layouts/BaseLayout.astro'
 import Hero from '../components/Hero.astro'
-import ArticlePreview from '../components/ArticlePreview.astro'
+import config from '../config'
 
-const articles = await getCollection('article')
+const {
+  articles,
+  seo: { title: seoTitle, description },
+  hero: { title, tagline, image, section }
+} = config
 ---
 
-<BaseLayout>
+<BaseLayout title={seoTitle} description={description}>
   <div class='stack gap-20 lg:gap-48'>
     <div class='wrapper stack gap-8 lg:gap-20'>
       <header class='hero'>
-        <Hero
-          title="Hey, I'm George Bardi 👋"
-          tagline='Engineer specializing in Javascript & Web Performance. I currently work as Senior Frontend Engineer @ Intelligencia.'
-          align='start'
-        />
-
-        <img
-          alt='George Bardi smiling in a red plaid shirt and tortoise shell glasses'
-          width='480'
-          height='620'
-          src='/assets/portrait.jpeg'
-        />
+        <Hero title={title} tagline={tagline} align='start' />
+        <img alt={title} width='480' height='620' src={image} />
       </header>
     </div>
 
     <main class='wrapper stack gap-20 lg:gap-48'>
       <section class='with-background with-cta'>
         <p class='section-title'>
-          I try to keep things simple. You'll find writing about technologies
-          I'm interested in at the time.
+          {section}
         </p>
         <div class='gallery'>
           {
-            articles.map((article) => (
+            articles.map(({ link, text }) => (
               <div>
-                <ArticlePreview article={article} />
+                <a
+                  href={link}
+                  class='w-full h-16 bg-[#262626] flex items-center justify-between px-5 my-6 no-underline text-white'
+                >
+                  <span class='text-xl'>{text}</span>
+                  <svg
+                    width='12'
+                    height='12'
+                    viewBox='0 0 12 12'
+                    fill='none'
+                    xmlns='http://www.w3.org/2000/svg'
+                    class='fill-current'
+                  >
+                    <path d='M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z' />
+                  </svg>
+                </a>
               </div>
             ))
           }

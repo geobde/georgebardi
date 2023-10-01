@@ -1,8 +1,13 @@
 ---
 import Hero from '../components/Hero.astro'
 import BaseLayout from '../layouts/BaseLayout.astro'
+import config from '../config'
+
+const {
+  notFound: { title, description }
+} = config
 ---
 
-<BaseLayout title='Not Found' description='404 Error — this page was not found'>
-  <Hero title='Page Not Found' tagline='Not found' />
+<BaseLayout title={title} description={description}>
+  <Hero title={`Page ${title}`} tagline={title} />
 </BaseLayout>
