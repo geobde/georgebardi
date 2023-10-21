@@ -19,12 +19,16 @@ const config = {
     ],
     articles:[
         {
-            link:"https://medium.com/@geobde/micro-frontend-architecture-722da385874f",
-            text:"Micro Frontend Architecture"
+            link:"https://medium.com/@geobde/generate-graphql-queries-from-simple-text-prompts-d276912d6a60",
+            text:"Generate GraphQL queries from simple text prompts"
         },
         {
             link:"https://medium.com/@geobde/react-performance-91d84678c613",
             text:"React Performance"
+        },
+        {
+            link:"https://medium.com/@geobde/micro-frontend-architecture-722da385874f",
+            text:"Micro Frontend Architecture"
         }
     ],
     hero: {
