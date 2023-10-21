@@ -11,11 +11,7 @@ const config = {
         {
             link: "https://twitter.com/geobde",
             text: "Twitter"
-        },
-        {
-            link: "https://bsky.app/profile/geobde.bsky.social",
-            text: "Bluesky"
-        },
+        }
     ],
     articles:[
         {
