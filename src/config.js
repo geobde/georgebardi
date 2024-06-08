@@ -15,10 +15,6 @@ const config = {
     ],
     articles:[
         {
-            link:"https://medium.com/@geobde/generate-graphql-queries-from-simple-text-prompts-d276912d6a60",
-            text:"Generate GraphQL queries from simple text prompts"
-        },
-        {
             link:"https://medium.com/@geobde/react-performance-91d84678c613",
             text:"React Performance"
         },
@@ -29,6 +25,10 @@ const config = {
         {
             link:"https://medium.com/@geobde/migration-from-cra-to-nextjs-csr-0304959efd07",
             text:"Migration from CRA to NextJS CSR"
+        }, 
+        {
+            link:"https://medium.com/@geobde/generate-graphql-queries-from-simple-text-prompts-d276912d6a60",
+            text:"Generate GraphQL queries from simple text prompts"
         }
     ],
     hero: {
