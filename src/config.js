@@ -25,6 +25,10 @@ const config = {
         {
             link:"https://medium.com/@geobde/micro-frontend-architecture-722da385874f",
             text:"Micro Frontend Architecture"
+        }, 
+        {
+            link:"https://medium.com/@geobde/migration-from-cra-to-nextjs-csr-0304959efd07",
+            text:"Migration from CRA to NextJS CSR"
         }
     ],
     hero: {
