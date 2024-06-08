@@ -24,7 +24,7 @@ const config = {
         }, 
         {
             link:"https://medium.com/@geobde/migration-from-cra-to-nextjs-csr-0304959efd07",
-            text:"Migrating from CRA to NextJS (CSR)"
+            text:"Migrating from Create React App to NextJS (CSR)"
         }, 
         {
             link:"https://medium.com/@geobde/generate-graphql-queries-from-simple-text-prompts-d276912d6a60",
