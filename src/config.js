@@ -33,7 +33,7 @@ const config = {
     ],
     hero: {
      title: "Hey, I'm George Bardi 👋",
-     tagline: "Engineer specializing in Javascript & Web Performance. I currently work as Senior Frontend Engineer @ Intelligencia AI",
+     tagline: "Crafting interfaces. I currently work as Senior Frontend Engineer @ Intelligencia AI",
      image:"/assets/portrait.jpeg",
      section:" I try to keep things simple. You'll find writing about technologies I'm interested in at the time."
     },
