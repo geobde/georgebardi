@@ -24,11 +24,11 @@ const config = {
         }, 
         {
             link:"https://medium.com/@geobde/migration-from-cra-to-nextjs-csr-0304959efd07",
-            text:"Migrating from Create React App to NextJS"
+            text:"Migrating from CRA to NextJS"
         }, 
         {
             link:"https://medium.com/@geobde/generate-graphql-queries-from-simple-text-prompts-d276912d6a60",
-            text:"Generate GraphQL queries from simple text prompts"
+            text:"Generate GraphQL queries"
         }
     ],
     hero: {
