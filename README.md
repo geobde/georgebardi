@@ -15,4 +15,4 @@ npm run dev
 
 ## Cloning / Forking
 
-Please review the [license](https://github.com/geobde/georgebardi/blob/main/LICENSE.txt) and remove all of my personal information.
+Please review the [license](https://github.com/geobde/georgebardi/blob/main/LICENSE.txt) and remove all of my personal information
