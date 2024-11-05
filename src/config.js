@@ -43,7 +43,7 @@ const config = {
     },
     notFound: {
         title: "Not Found",
-        description: "404 Error — this page was not found"
+        description: "404 Error"
     }
 }
 
